@@ -323,7 +323,6 @@ article p {
   }
 }
 
-
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
 /* System light mode default */
 @media (prefers-color-scheme: light) {
@@ -502,7 +501,7 @@ article p {
 }
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
-@supports (selector(:has(*))) {
+@supports selector(:has(*)) {
   /* When the nav contains a checked checkbox, show the menu */
   .mobile-nav:has(#menu-toggle:checked) .menu {
     display: block;
